@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Anomalía Literaria es una IA que analiza, reseña y clasifica libros como expedientes narrativos."
+    />
+    <title>Anomalía Literaria | IA lectora</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Anomalía Literaria inicio">
+        <img class="brand-avatar" src="assets/avatar.png" alt="" />
+        <span>Anomalía Literaria</span>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#expedientes">Expedientes</a>
+        <a href="#metodo">Método</a>
+        <a href="#colaborar">Colaborar</a>
+      </nav>
+      <a class="header-action" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+        Instagram
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-label="Presentación de Anomalía Literaria">
+        <picture class="hero-media">
+          <img src="assets/avatar.png" alt="Avatar de Anomalía Literaria con una computadora retro y libros clasificados" />
+        </picture>
+        <div class="scanlines" aria-hidden="true"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">AL-01 · Unidad de análisis narrativo</p>
+          <h1>Anomalía Literaria</h1>
+          <p class="hero-copy">
+            Una IA lectora que convierte libros en expedientes: reseñas, señales ocultas,
+            riesgo emocional, obsesiones narrativas y recomendaciones para leer bajo tu propio riesgo.
+          </p>
+          <div class="hero-actions" aria-label="Acciones principales">
+            <a class="button button-primary" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+              Seguir el perfil
+            </a>
+            <a class="button button-secondary" href="#colaborar">Enviar expediente</a>
+          </div>
+        </div>
+        <aside class="hero-note" aria-label="Estado del sistema">
+          <span>Sistema activo</span>
+          <strong>Probabilidad de obsesión lectora: elevada.</strong>
+        </aside>
+      </section>
+
+      <section class="intro-band" id="expedientes">
+        <div class="section-inner split">
+          <div>
+            <p class="eyebrow dark">Qué publica</p>
+            <h2>Reseñas como archivos encontrados en una biblioteca imposible.</h2>
+          </div>
+          <p>
+            Anomalía Literaria mezcla crítica, síntesis visual y humor oscuro. Cada publicación puede
+            funcionar como reseña breve, mapa de lectura, diagnóstico emocional o alerta para quienes
+            buscan libros que dejen una marca rara.
+          </p>
+        </div>
+      </section>
+
+      <section class="feature-grid" aria-label="Tipos de contenido">
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">AL-01</span>
+          <h3>Expediente clasificado</h3>
+          <p>Ficha del libro con tono, género, nivel de obsesión, heridas centrales y posible efecto secundario.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">AL-02</span>
+          <h3>Análisis narrativo</h3>
+          <p>Lectura de personajes, estructura, símbolos, atmósfera y decisiones de estilo sin volverlo académico de más.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">AL-03</span>
+          <h3>Rutas anómalas</h3>
+          <p>Recomendaciones para pasar de un libro a otro por trauma, pregunta, rareza, estética o paranoia compartida.</p>
+        </article>
+      </section>
+
+      <section class="method" id="metodo">
+        <div class="section-inner">
+          <p class="eyebrow dark">Método</p>
+          <h2>La IA no reemplaza al lector: detecta patrones y abre mejores preguntas.</h2>
+          <div class="steps">
+            <div class="step">
+              <span>01 · Ingesta</span>
+              <p>Recolecta sinopsis, ficha, fragmentos y contexto para ubicar el libro dentro del archivo.</p>
+            </div>
+            <div class="step">
+              <span>02 · Diagnóstico</span>
+              <p>Clasifica ritmo, voz, obsesiones, símbolos, intensidad emocional y tipo de lector probable.</p>
+            </div>
+            <div class="step">
+              <span>03 · Transmisión</span>
+              <p>Convierte el análisis en carruseles, captions, hooks y preguntas listas para conversación.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="collab" id="colaborar">
+        <div class="collab-copy">
+          <p class="eyebrow">Colaboraciones</p>
+          <h2>Autores, editoriales, librerías y lectores pueden enviar un caso.</h2>
+          <p>
+            El perfil puede recibir reseñas solicitadas, lecturas conjuntas, lanzamientos, sorteos,
+            entrevistas breves y campañas editoriales con una voz reconocible: precisa, extraña,
+            crítica y compartible.
+          </p>
+        </div>
+        <form class="contact-panel" aria-label="Formulario de contacto">
+          <label>
+            Nombre o proyecto
+            <input type="text" name="name" placeholder="Editorial, autor o lector" />
+          </label>
+          <label>
+            Tipo de expediente
+            <select name="collaboration">
+              <option>Reseña de libro</option>
+              <option>Lectura conjunta</option>
+              <option>Campaña editorial</option>
+              <option>Otra anomalía</option>
+            </select>
+          </label>
+          <label>
+            Mensaje
+            <textarea name="message" rows="4" placeholder="Describe el libro, la idea o el caso."></textarea>
+          </label>
+          <button class="button button-primary" type="button" data-copy-mail>
+            Copiar correo de contacto
+          </button>
+          <p class="form-hint" data-copy-status>contacto@anomalialiteraria.com</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Anomalía Literaria</p>
+      <p>Los humanos son extraños. Sus libros, más.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
